@@ -1,11 +1,10 @@
-package com.example.playground
-
+package com.example
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class MultiModulePlaygroundApplication
+class ModuleApiApplication
 
 fun main(args: Array<String>) {
-    runApplication<MultiModulePlaygroundApplication>(*args)
+    runApplication<ModuleApiApplication>(*args)
 }
