@@ -1,0 +1,26 @@
+[versions]
+kotlin = "1.9.25"
+spring_boot = "3.4.0"
+spring_dependency_management = "1.1.6"
+spring_cloud = "2023.0.1"
+spock = "2.4-M4-groovy-4.0"
+
+[libraries]
+spring_boot_starter_data_jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
+spring_boot_starter_web = { module = "org.springframework.boot:spring-boot-starter-web" }
+jackson_module_kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
+kotlin_reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+h2_database = { module = "com.h2database:h2" }
+mysql_connector = { module = "com.mysql:mysql-connector-j" }
+spring_boot_starter_test = { module = "org.springframework.boot:spring-boot-starter-test" }
+kotlin_test_junit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
+spock_core = { module = "org.spockframework:spock-core", version.ref = "spock" }
+spock_spring = { module = "org.spockframework:spock-spring", version.ref = "spock" }
+junit_platform_launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
+[plugins]
+kotlin_jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin_spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+kotlin_jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "kotlin" }
+spring_boot = { id = "org.springframework.boot", version.ref = "spring_boot" }
+spring_dependency_management = { id = "io.spring.dependency-management", version.ref = "spring_dependency_management" }
