@@ -1,4 +1,4 @@
-package com.example
+package com.playground
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 

@@ -30,6 +30,10 @@ subprojects {
     dependencies {
         implementation("org.jetbrains.kotlin:kotlin-reflect")
         implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+        testImplementation(libs.spring.mockk)
+        testImplementation(libs.bundles.kotest)
+        testImplementation(libs.spring.boot.starter.test)
     }
 
     tasks.withType<KotlinCompile> {
@@ -47,4 +51,7 @@ subprojects {
         enabled = true
     }
 
+    tasks.withType<Test> {
+        useJUnitPlatform()
+    }
 }
