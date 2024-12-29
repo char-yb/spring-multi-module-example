@@ -23,6 +23,8 @@ spock_core = { module = "org.spockframework:spock-core", version.ref = "spock" }
 spock_spring = { module = "org.spockframework:spock-spring", version.ref = "spock" }
 junit_platform_launcher = { module = "org.junit.platform:junit-platform-launcher" }
 
+kotlin_jdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
+
 # FixtureMonkey Library
 fixture_monkey_starter_kotlin = { module = "com.navercorp.fixturemonkey:fixture-monkey-starter-kotlin", version.ref = "fixture_monkey" }
 

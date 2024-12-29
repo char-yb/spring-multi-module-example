@@ -28,8 +28,8 @@ subprojects {
     }
 
     dependencies {
-        implementation("org.jetbrains.kotlin:kotlin-reflect")
-        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+        implementation(libs.kotlin.reflect)
+        implementation(libs.kotlin.jdk8)
 
         testImplementation(libs.spring.mockk)
         testImplementation(libs.bundles.kotest)
